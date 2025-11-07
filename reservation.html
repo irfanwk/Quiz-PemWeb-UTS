@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservasi Meja</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <!-- SECTION: Info Reservasi -->
+  <section>
+    <h1>Reservasi Meja</h1>
+    <p>
+      Silakan lakukan reservasi meja terlebih dahulu untuk memastikan ketersediaan.
+      Isi formulir di bawah ini dengan benar dan lengkap.
+    </p>
+
+    <ul>
+      <li>Reservasi harus dilakukan minimal 1 hari sebelum kedatangan.</li>
+      <li>Pastikan nomor telepon aktif untuk konfirmasi.</li>
+      <li>Reservasi akan hangus jika terlambat lebih dari 15 menit.</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <!-- FORM RESERVASI -->
+  <form action="#">
+
+    <!-- Personal Information -->
+    <fieldset>
+      <legend>Informasi Pribadi</legend>
+
+      <label for="nama">Nama Lengkap</label><br>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required><br><br>
+
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" placeholder="contoh@email.com" required><br><br>
+
+      <label for="telepon">No. Telepon</label><br>
+      <input type="tel" id="telepon" name="telepon" placeholder="081234567890" required>
+    </fieldset>
+
+    <br>
+
+    <!-- Reservation Details -->
+    <fieldset>
+      <legend>Detail Reservasi</legend>
+
+      <label for="tanggal">Tanggal</label><br>
+      <input type="date" id="tanggal" name="tanggal" required><br><br>
+
+      <label for="waktu">Waktu</label><br>
+      <input type="time" id="waktu" name="waktu" required><br><br>
+
+      <label for="jumlah">Jumlah Orang</label><br>
+      <select id="jumlah" name="jumlah" required>
+        <option value="">-- Pilih Jumlah --</option>
+        <!-- Loop 1 - 10 -->
+        <option>1 Orang</option>
+        <option>2 Orang</option>
+        <option>3 Orang</option>
+        <option>4 Orang</option>
+        <option>5 Orang</option>
+        <option>6 Orang</option>
+        <option>7 Orang</option>
+        <option>8 Orang</option>
+        <option>9 Orang</option>
+        <option>10 Orang</option>
+      </select><br><br>
+
+      <label for="tipe">Tipe Meja</label><br>
+      <select id="tipe" name="tipe" required>
+        <option value="">-- Pilih Tipe Meja --</option>
+        <option>Regular</option>
+        <option>Window Seat</option>
+        <option>Private Room</option>
+      </select>
+    </fieldset>
+
+    <br>
+
+    <!-- Additional -->
+    <fieldset>
+      <legend>Keterangan Tambahan</legend>
+
+      <label for="catatan">Catatan Khusus (Opsional)</label><br>
+      <textarea id="catatan" name="catatan" rows="3" placeholder="Contoh: Alergi kacang, ulang tahun, dll."></textarea><br><br>
+
+      <input type="checkbox" id="syarat" name="syarat" required>
+      <label for="syarat">Saya menyetujui syarat dan ketentuan reservasi</label>
+    </fieldset>
+
+    <br>
+
+    <button type="submit">Kirim Reservasi</button>
+  </form>
+
+  <br><hr><br>
+
+  <!-- Aside (Kontak Alternatif) -->
+  <aside>
+    <p><strong>Butuh Bantuan?</strong></p>
+    <p>Reservasi via WhatsApp / Telp:</p>
+    <p><a href="tel:+6281234567890">+62 812-3456-7890</a></p>
+  </aside>
+
+</body>
+</html>
