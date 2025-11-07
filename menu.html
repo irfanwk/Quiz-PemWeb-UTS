@@ -3,165 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <title>Menu</title>
 </head>
-<body>
-    <header>
-        <h1>Menu</h1>
-        <p>Selamat datang di menu kami! Temukan berbagai pilihan minuman dan makanan yang kami tawarkan.</p>
-        <nav>
-            <button data-filter="all">All</button>
-            <button data-filter="coffee">Coffee</button>
-            <button data-filter="non-coffee">Non-Coffee</button>
-            <button data-filter="food">Food</button>
-            <button data-filter="snacks">Snacks</button>
-        </nav>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-cover bg-center h-96" style="background-image: url('https://arsitag.b-cdn.net/wp-content/uploads/2022/10/coffee-shop-minimalis.jpeg');">
+        <div class="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center">
+            <h1 class="text-white text-5xl font-bold text-center">Our Menu</h1>
+            <p class="text-white text-lg mt-4 text-center max-w-2xl">Selamat datang di menu kami! Temukan berbagai pilihan minuman dan makanan yang kami tawarkan.</p>
+        </div>
     </header>
     
-    <section>
-        <h2>Daftar Menu Lengkap</h2>
-        <div>
+    <main class="container mx-auto p-8">
+        <section id="menu-filter" class="mb-8 text-center">
+            <button data-filter="all" class="bg-gray-800 text-white px-4 py-2 rounded-md mr-2">All</button>
+            <button data-filter="coffee" class="bg-gray-300 text-gray-800 px-4 py-2 rounded-md mr-2">Coffee</button>
+            <button data-filter="non-coffee" class="bg-gray-300 text-gray-800 px-4 py-2 rounded-md mr-2">Non-Coffee</button>
+            <button data-filter="food" class="bg-gray-300 text-gray-800 px-4 py-2 rounded-md mr-2">Food</button>
+            <button data-filter="snacks" class="bg-gray-300 text-gray-800 px-4 py-2 rounded-md">Snacks</button>
+        </section>
+
+        <section id="menu-items" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- kopi -->
-            <article data-category="coffee">
+            <article data-category="coffee" class="bg-white rounded-lg shadow-md overflow-hidden">
                 <figure>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRr6_VNc1ZpwynKtXLHQObj4SI-o_9QvNb_Q&s" alt="Espresso" width="150">
-                    <figcaption>
-                        <h3>Espresso</h3>
-                        <p>Ini kopi espresso yang nikmat dan penuh rasa.</p>
-                        <p>Rp 18.000</p>
-                        <mark>Best Seller</mark>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRr6_VNc1ZpwynKtXLHQObj4SI-o_9QvNb_Q&s" alt="Espresso" class="w-full h-48 object-cover">
+                    <figcaption class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Espresso</h3>
+                        <p class="text-gray-600 mb-4">Ini kopi espresso yang nikmat dan penuh rasa.</p>
+                        <p class="text-lg font-semibold text-gray-800">Rp 18.000</p>
+                        <mark class="bg-yellow-200 text-yellow-800 px-2 py-1 rounded-full text-sm font-semibold">Best Seller</mark>
                     </figcaption>
                 </figure>
             </article>
-            <article data-category="coffee">
+            <article data-category="coffee" class="bg-white rounded-lg shadow-md overflow-hidden">
                 <figure>
-                    <img src="https://www.acouplecooks.com/wp-content/uploads/2020/10/how-to-make-cappuccino-005.jpg" alt="Cappuccino" width="150">
-                    <figcaption>
-                        <h3>Cappuccino</h3>
-                        <p>Capuccino adalah kopi yang terbuat dari espresso dan susu.</p>
-                        <p>Rp 25.000</p>
+                    <img src="https://www.acouplecooks.com/wp-content/uploads/2020/10/how-to-make-cappuccino-005.jpg" alt="Cappuccino" class="w-full h-48 object-cover">
+                    <figcaption class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Cappuccino</h3>
+                        <p class="text-gray-600 mb-4">Capuccino adalah kopi yang terbuat dari espresso dan susu.</p>
+                        <p class="text-lg font-semibold text-gray-800">Rp 25.000</p>
                     </figcaption>
                 </figure>
             </article>
-            <article data-category="coffee">
+            <article data-category="coffee" class="bg-white rounded-lg shadow-md overflow-hidden">
                 <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Caffe_Latte_at_Pulse_Cafe.jpg/1200px-Caffe_Latte_at_Pulse_Cafe.jpg" alt="Latte" width="150">
-                    <figcaption>
-                        <h3>Latte</h3>
-                        <p>Ini kopi latte yang nikmat dan penuh rasa.</p>
-                        <p>Rp 28.000</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Caffe_Latte_at_Pulse_Cafe.jpg/1200px-Caffe_Latte_at_Pulse_Cafe.jpg" alt="Latte" class="w-full h-48 object-cover">
+                    <figcaption class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Latte</h3>
+                        <p class="text-gray-600 mb-4">Ini kopi latte yang nikmat dan penuh rasa.</p>
+                        <p class="text-lg font-semibold text-gray-800">Rp 28.000</p>
                     </figcaption>
                 </figure>
             </article>
-            <article data-category="coffee">
+            <article data-category="coffee" class="bg-white rounded-lg shadow-md overflow-hidden">
                 <figure>
-                    <img src="https://assets.beanbox.com/blog_images/AB7ud4YSE6nmOX0iGlgA.jpeg" alt="Americano" width="150">
-                    <figcaption>
-                        <h3>Americano</h3>
-                        <p>Ini kopi americano yang nikmat dan penuh rasa.</p>
-                        <p>Rp 22.000</p>
+                    <img src="https://assets.beanbox.com/blog_images/AB7ud4YSE6nmOX0iGlgA.jpeg" alt="Americano" class="w-full h-48 object-cover">
+                    <figcaption class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Americano</h3>
+                        <p class="text-gray-600 mb-4">Ini kopi americano yang nikmat dan penuh rasa.</p>
+                        <p class="text-lg font-semibold text-gray-800">Rp 22.000</p>
                     </figcaption>
                 </figure>
             </article>
 
             <!-- bukan kopi -->
-            <article data-category="non-coffee">
+            <article data-category="non-coffee" class="bg-white rounded-lg shadow-md overflow-hidden">
                 <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Becher_Kakao_mit_Sahneh%C3%A4ubchen.JPG" alt="Chocolate" width="150">
-                    <figcaption>
-                        <h3>Chocolate</h3>
-                        <p>Ini adalah minuman cokelat yang manis, terbuat dari bubuk kakao, gula, dan susu atau air.</p>
-                        <p>Rp 24.000</p>
-                        <span>New</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Becher_Kakao_mit_Sahneh%C3%A4ubchen.JPG" alt="Chocolate" class="w-full h-48 object-cover">
+                    <figcaption class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Chocolate</h3>
+                        <p class="text-gray-600 mb-4">Ini adalah minuman cokelat yang manis, terbuat dari bubuk kakao, gula, dan susu atau air.</p>
+                        <p class="text-lg font-semibold text-gray-800">Rp 24.000</p>
+                        <span class="bg-green-200 text-green-800 px-2 py-1 rounded-full text-sm font-semibold">New</span>
                     </figcaption>
                 </figure>
             </article>
-            <article data-category="non-coffee">
+            <article data-category="non-coffee" class="bg-white rounded-lg shadow-md overflow-hidden">
                 <figure>
-                    <img src="https://www.romylondonuk.com/wp-content/uploads/2025/04/Matcha-Latte-Starbucks-Recipe_THUMB.jpg" alt="Matcha" width="150">
-                    <figcaption>
-                        <h3>Matcha</h3>
-                        <p>Matcha adalah bubuk halus dari daun teh hijau yang ditanam dan diproses secara khusus, biasanya digunakan di Asia Timur.</p>
-                        <p>Rp 27.000</p>
+                    <img src="https://www.romylondonuk.com/wp-content/uploads/2025/04/Matcha-Latte-Starbucks-Recipe_THUMB.jpg" alt="Matcha" class="w-full h-48 object-cover">
+                    <figcaption class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Matcha</h3>
+                        <p class="text-gray-600 mb-4">Matcha adalah bubuk halus dari daun teh hijau yang ditanam dan diproses secara khusus, biasanya digunakan di Asia Timur.</p>
+                        <p class="text-lg font-semibold text-gray-800">Rp 27.000</p>
                     </figcaption>
                 </figure>
             </article>
-            <article data-category="non-coffee">
+            <article data-category="non-coffee" class="bg-white rounded-lg shadow-md overflow-hidden">
                 <figure>
-                    <img src="https://rsum.bandaacehkota.go.id/wp-content/uploads/2025/02/teh.webp" alt="Tea" width="150">
-                    <figcaption>
-                        <h3>Tea</h3>
-                        <p>Teh adalah minuman panas yang dibuat dengan menyeduh daun teh kering yang dihancurkan dalam air mendidih.</p>
-                        <p>Rp 20.000</p>
+                    <img src="https://rsum.bandaacehkota.go.id/wp-content/uploads/2025/02/teh.webp" alt="Tea" class="w-full h-48 object-cover">
+                    <figcaption class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Tea</h3>
+                        <p class="text-gray-600 mb-4">Teh adalah minuman panas yang dibuat dengan menyeduh daun teh kering yang dihancurkan dalam air mendidih.</p>
+                        <p class="text-lg font-semibold text-gray-800">Rp 20.000</p>
                     </figcaption>
                 </figure>
             </article>
 
             <!-- Food -->
-            <article data-category="food">
+            <article data-category="food" class="bg-white rounded-lg shadow-md overflow-hidden">
                 <figure>
-                    <img src="https://www.allrecipes.com/thmb/IrY572TXic4UXXVn8EetsarI3S0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-269500-creamy-garlic-pasta-Beauties-4x3-f404628aad2a435a9985b2cf764209b5.jpg" alt="Pasta" width="150">
-                    <figcaption>
-                        <h3>Pasta</h3>
-                        <p>Ini adalah makanan pokok dari masakan Italia tradisional, dengan berbagai pilihan saus.</p>
-                        <p>Rp 45.000</p>
+                    <img src="https://www.allrecipes.com/thmb/IrY572TXic4UXXVn8EetsarI3S0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-269500-creamy-garlic-pasta-Beauties-4x3-f404628aad2a435a9985b2cf764209b5.jpg" alt="Pasta" class="w-full h-48 object-cover">
+                    <figcaption class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Pasta</h3>
+                        <p class="text-gray-600 mb-4">Ini adalah makanan pokok dari masakan Italia tradisional, dengan berbagai pilihan saus.</p>
+                        <p class="text-lg font-semibold text-gray-800">Rp 45.000</p>
                     </figcaption>
                 </figure>
             </article>
-            <article data-category="food">
+            <article data-category="food" class="bg-white rounded-lg shadow-md overflow-hidden">
                 <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Bacon%2C_lettuce%2C_tomato%2C_and_avocado.jpg" alt="Sandwich" width="150">
-                    <figcaption>
-                        <h3>Sandwich</h3>
-                        <p>Ini adalah makanan yang biasanya terdiri dari sayuran, keju atau daging yang diiris, diletakkan di atas atau di antara irisan roti.</p>
-                        <p>Rp 35.000</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Bacon%2C_lettuce%2C_tomato%2C_and_avocado.jpg" alt="Sandwich" class="w-full h-48 object-cover">
+                    <figcaption class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Sandwich</h3>
+                        <p class="text-gray-600 mb-4">Ini adalah makanan yang biasanya terdiri dari sayuran, keju atau daging yang diiris, diletakkan di atas atau di antara irisan roti.</p>
+                        <p class="text-lg font-semibold text-gray-800">Rp 35.000</p>
                     </figcaption>
                 </figure>
             </article>
-            <article data-category="food">
+            <article data-category="food" class="bg-white rounded-lg shadow-md overflow-hidden">
                 <figure>
-                    <img src="https://images.getrecipekit.com/20240905221054-pk-greek-salad-0214-min.jpg?aspect_ratio=16:9&quality=90&" alt="Salad" width="150">
-                    <figcaption>
-                        <h3>Salad</h3>
-                        <p>Salad adalah hidangan yang terdiri dari campuran potongan kecil makanan, biasanya sayuran atau buah-buahan.</p>
-                        <p>Rp 30.000</p>
+                    <img src="https://images.getrecipekit.com/20240905221054-pk-greek-salad-0214-min.jpg?aspect_ratio=16:9&quality=90&" alt="Salad" class="w-full h-48 object-cover">
+                    <figcaption class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Salad</h3>
+                        <p class="text-gray-600 mb-4">Salad adalah hidangan yang terdiri dari campuran potongan kecil makanan, biasanya sayuran atau buah-buahan.</p>
+                        <p class="text-lg font-semibold text-gray-800">Rp 30.000</p>
                     </figcaption>
                 </figure>
             </article>
 
             <!-- snacks -->
-            <article data-category="snacks">
+            <article data-category="snacks" class="bg-white rounded-lg shadow-md overflow-hidden">
                 <figure>
-                    <img src="https://sugargeekshow.com/wp-content/uploads/2023/10/easy_chocolate_cake_slice.jpg" alt="Cake" width="150">
-                    <figcaption>
-                        <h3>Cake</h3>
-                        <p>Ini adalah bentuk makanan manis yang terbuat dari tepung, gula, dan bahan lainnya, yang biasanya dipanggang.</p>
-                        <p>Rp 25.000</p>
+                    <img src="https://sugargeekshow.com/wp-content/uploads/2023/10/easy_chocolate_cake_slice.jpg" alt="Cake" class="w-full h-48 object-cover">
+                    <figcaption class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Cake</h3>
+                        <p class="text-gray-600 mb-4">Ini adalah bentuk makanan manis yang terbuat dari tepung, gula, dan bahan lainnya, yang biasanya dipanggang.</p>
+                        <p class="text-lg font-semibold text-gray-800">Rp 25.000</p>
                     </figcaption>
                 </figure>
             </article>
-            <article data-category="snacks">
+            <article data-category="snacks" class="bg-white rounded-lg shadow-md overflow-hidden">
                 <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2ChocolateChipCookies.jpg/1200px-2ChocolateChipCookies.jpg" alt="Cookies" width="150">
-                    <figcaption>
-                        <h3>Cookies</h3>
-                        <p>Ini adalah makanan yang dipanggang atau dimasak yang biasanya kecil, datar, dan manis.</p>
-                        <p>Rp 15.000</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2ChocolateChipCookies.jpg/1200px-2ChocolateChipCookies.jpg" alt="Cookies" class="w-full h-48 object-cover">
+                    <figcaption class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Cookies</h3>
+                        <p class="text-gray-600 mb-4">Ini adalah makanan yang dipanggang atau dimasak yang biasanya kecil, datar, dan manis.</p>
+                        <p class="text-lg font-semibold text-gray-800">Rp 15.000</p>
                     </figcaption>
                 </figure>
             </article>
-             <article data-category="snacks">
+             <article data-category="snacks" class="bg-white rounded-lg shadow-md overflow-hidden">
                 <figure>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTJrpFR3x--_DIY1u98WRrJWRZqvxvlUuHfw&s" alt="Pastry" width="150">
-                    <figcaption>
-                        <h3>Pastry</h3>
-                        <p>Ini adalah adonan yang terbuat dari tepung, air, dan lemak yang dapat berupa gurih atau manis.</p>
-                        <p>Rp 20.000</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTJrpFR3x--_DIY1u98WRrJWRZqvxvlUuHfw&s" alt="Pastry" class="w-full h-48 object-cover">
+                    <figcaption class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Pastry</h3>
+                        <p class="text-gray-600 mb-4">Ini adalah adonan yang terbuat dari tepung, air, dan lemak yang dapat berupa gurih atau manis.</p>
+                        <p class="text-lg font-semibold text-gray-800">Rp 20.000</p>
                     </figcaption>
                 </figure>
             </article>
-        </div>
-    </section>
+        </section>
+    </main>
 </body>
 </html>
